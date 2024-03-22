@@ -8,12 +8,12 @@ export default function JobCard({post,k})
 
     return(
         <>
-            <div className="container" style={{width:"17vw",height:"fit-content",padding:"0.3vw 1.4vw",borderRadius:"1.5vw",backgroundColor:"white",border:"1px solid rgb(0,0,0,0.3)",margin:"0.5vw"}}>
+            <div className="container" style={{width:"17vw",height:"fit-content",padding:"0.3vw 1.4vw",borderRadius:"1.5vw",backgroundColor:"white",border:"1px solid rgb(0,0,0,0.3)",margin:"0.5vw",fontFamily: "'Roboto', sans-serif"}}>
                 <div className="row" style={{backgroundColor:colors[k%3],height:"16vw",borderRadius:"1.2vw"}}>
                     <div className="row" style={{margin:"0 0 0 0", height:"3vw",padding:"1vw 0 0 0"}}>
                         <div className="col-8" style={{display: "flex",justifyContent: "start",padding:"0 0 0 1vw",alignItems:"center"}}>
                             <button style={{border:"transparent",borderRadius:"1vw",backgroundColor:"white",color:"rgb(0,0,0,0.8)",padding:"0.4vw 0.8vw",fontSize:"0.6vw",fontWeight:"700",height:"fit-content"}}>{post["date"]}</button>
-                            <span style={{textAlign:"start",fontSize:"0.7vw",fontWeight:"500",marginBottom:"0",padding:0,marginLeft:"0.5vw"}}>On-site</span>
+                            <span style={{textAlign:"start",fontSize:"0.7vw",fontWeight:"500",marginBottom:"0",padding:0,marginLeft:"0.5vw"}}>{post["type"]}</span>
                         </div>
                         <div className="col-4" style={{display:"flex",justifyContent:"center",alignItems:"center",padding:0}}>
                             <button style={{display:"flex",border:"transparent",borderRadius:"2vw",backgroundColor:"white",padding:"0.5vw",alignItems:"center",justifyContent:"center"}}><img src={bookmark} alt="" style={{height:"1vw"}}/></button>
@@ -28,7 +28,7 @@ export default function JobCard({post,k})
                             
                         </div>
                     <div className="row" style={{display:"flex", margin:"0.5vw 0 0.5vw 0",padding:"0 1vw",height:"4vw"}}>
-                        {post["skills"].map((item,key) => <button key={key} style={{border:"1px solid rgb(0,0,0,0.5)",fontSize:"0.6vw",fontWeight:"400",marginRight:"0.3vw",borderRadius:"1vw",backgroundColor:"transparent",width:"fit-content",height:"fit-content",marginBottom:"-0.3vw",padding:"0.3vw 0.5vw"}}>{item}</button>)}
+                        {post["skills"].map((item,key) => <button key={key} style={{border:"1px solid rgb(0,0,0,0.5)",fontSize:"0.6vw",fontWeight:"500",marginRight:"0.3vw",borderRadius:"1vw",backgroundColor:"transparent",width:"fit-content",height:"fit-content",marginBottom:"-0.3vw",padding:"0.3vw 0.5vw"}}>{item}</button>)}
                     </div>
                 </div>
                 <div className="row" style={{padding:"1vw 0.8vw"}}>
@@ -37,7 +37,7 @@ export default function JobCard({post,k})
                         <p style={{fontSize:"0.8vw",marginLeft:"auto",textAlign:"start",marginBottom:"0"}}>{post["location"]}</p>
                     </div>
                     <div className="col-5" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
-                        <button style={{padding:"0.5vw 1vw",backgroundColor:"rgb(0,0,0,0.85",color:"white",border:"transparent",borderRadius:"1vw",fontSize:"0.6vw"}}>Details</button>
+                        <button style={{padding:"0.5vw 1vw",backgroundColor:"rgb(0,0,0,0.85",color:"white",border:"transparent",borderRadius:"1vw",fontSize:"0.65vw"}}>Details</button>
                     </div>
                 </div>
             </div>
