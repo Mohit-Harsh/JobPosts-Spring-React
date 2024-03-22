@@ -4,12 +4,12 @@ import bookmark from '../../assets/icons8-bookmark-96.png'
 export default function JobCard({post,k})
 {
 
-    let colors = ["rgb(255,225,204)","rgb(212,246,237)","rgb(227,219,250)"];
+    let colors = ["rgb(255,225,204)","rgb(212,246,237)","rgb(227,219,250)","rgb(236,239,244)","rgb(212,246,237)"];
 
     return(
         <>
             <div className="container" style={{width:"17vw",height:"fit-content",padding:"0.3vw 1.4vw",borderRadius:"1.5vw",backgroundColor:"white",border:"1px solid rgb(0,0,0,0.3)",margin:"0.5vw",fontFamily: "'Roboto', sans-serif"}}>
-                <div className="row" style={{backgroundColor:colors[k%3],height:"16vw",borderRadius:"1.2vw"}}>
+                <div className="row" style={{backgroundColor:colors[k%5],height:"16vw",borderRadius:"1.2vw"}}>
                     <div className="row" style={{margin:"0 0 0 0", height:"3vw",padding:"1vw 0 0 0"}}>
                         <div className="col-8" style={{display: "flex",justifyContent: "start",padding:"0 0 0 1vw",alignItems:"center"}}>
                             <button style={{border:"transparent",borderRadius:"1vw",backgroundColor:"white",color:"rgb(0,0,0,0.8)",padding:"0.4vw 0.8vw",fontSize:"0.6vw",fontWeight:"700",height:"fit-content"}}>{post["date"]}</button>
