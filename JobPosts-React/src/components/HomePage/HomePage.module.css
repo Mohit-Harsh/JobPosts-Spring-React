@@ -1,0 +1,59 @@
+#h1
+{
+    font-size: 1.8vw;
+    font-weight: 700;
+    color: rgb(0,0,0,0.85);
+}
+
+#h3
+{
+    font-size: 2vw;
+    font-weight: 700;
+    color: rgb(0,0,0,0.85);
+}
+
+#search
+{
+    border-radius: 0.7vw;
+    background-color: white;
+    color: rgb(0,0,0,0.75);
+    padding: 0.8vw 1vw;
+    width: 22vw;
+    font-size: 0.8vw;
+    height: fit-content;
+    border: transparent;
+    box-shadow: 0px 4px 10px 0px rgb(232,232,232);
+    margin-left: 2vw;
+    padding-left: 2vw;
+    padding-right: 4vw;
+}
+#search:focus
+{
+    outline: none;
+}
+#submit
+{
+    position: relative;
+    height: fit-content;
+    padding: 0.5vw;
+    border: transparent;
+    background-color: transparent;
+    height: 0.8vw;
+    width: auto;
+    right: 3.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dropdown
+{
+    background-color: rgb(0,0,0,0.85);
+    color: white;
+    box-shadow: 0px 4px 10px 2px rgb(232,232,232);
+    font-size: 0.8vw;
+    padding: 0.8vw 1vw;
+    margin-right: 1vw;
+    border-radius: 0.7vw;
+
+}
