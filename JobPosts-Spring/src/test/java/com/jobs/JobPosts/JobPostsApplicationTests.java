@@ -1,10 +1,10 @@
-package com.jobs.JobPostsMongo;
+package com.jobs.JobPosts;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JobPostsMongoApplicationTests {
+class JobPostsApplicationTests {
 
 	@Test
 	void contextLoads() {
