@@ -9,9 +9,9 @@ function App()
   return (
     <>
       <Routes>
-        <Route path='/'>
-          <Route path='home' Component={HomePage} />
-        </Route>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='create'/>
+        <Route path='apply' />
       </Routes>
     </>
   )
