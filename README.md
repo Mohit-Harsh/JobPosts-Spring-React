@@ -1,2 +1,2 @@
-# JobPosts-MongoDB
-Job Posts Microservice built using Spring Boot and MongoDB
+# JobPosts-Spring-React
+Job Posts Microservice built using Spring Boot and React
