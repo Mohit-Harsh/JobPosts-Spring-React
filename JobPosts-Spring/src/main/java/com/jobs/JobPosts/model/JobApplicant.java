@@ -29,7 +29,16 @@ public class JobApplicant
     private Long phone;
 
     @Column(columnDefinition = "TEXT")
-    private String qualification;
+    private String location;
+
+    @Column(length = 20)
+    private List<String> skills;
+
+    @Column(length = 10)
+    private String type;
+
+    @Column(columnDefinition = "TEXT")
+    private String profile;
 
     @JsonIgnore
     @ManyToMany(mappedBy = "jobapplicants", cascade = CascadeType.ALL)

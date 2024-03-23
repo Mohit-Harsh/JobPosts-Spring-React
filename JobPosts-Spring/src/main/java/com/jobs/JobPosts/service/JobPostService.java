@@ -27,10 +27,10 @@ public class JobPostService
         return repo.findAll();
     }
 
-    public void addpost(JobPost post)
+    public JobPost addpost(JobPost post)
     {
-        repo.save(post);
         rabbitTemplate.convertAndSend("exchange","post_routing_key",post);
+        return repo.save((post));
     }
 
     public void deletepost(int pid)
@@ -45,13 +45,13 @@ public class JobPostService
         {
             if(applicant.getEmail().equals(jobApplicant.getEmail()))
             {
-                return "already applied";
+                return "You have already applied for this job";
             }
         }
         JobApplicant newapplicant = arepo.save(jobApplicant);
         post.getJobapplicants().add(newapplicant);
         repo.save(post);
-        return "success";
+        return "You application was successfully accepted. Check your email for the confirmation details.";
     }
 
     public List<JobApplicant> getapplicants(int pid)

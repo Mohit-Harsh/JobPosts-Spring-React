@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("post")
 public class JobPostController
 {
@@ -28,9 +29,9 @@ public class JobPostController
     }
 
     @PostMapping("/")
-    public void addpost(@RequestBody JobPost post)
+    public JobPost addpost(@RequestBody JobPost post)
     {
-        service.addpost(post);
+        return service.addpost(post);
     }
 
     @DeleteMapping("/{pid}")

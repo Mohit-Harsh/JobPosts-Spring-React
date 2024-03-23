@@ -9,12 +9,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
-#description:focus
+#profile:focus
 {
     outline: none;
 }
 
-#description
+#profile
 {
     font-size: 1vw;
     font-family: 'Roboto', sans-serif;

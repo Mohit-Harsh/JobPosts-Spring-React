@@ -42,6 +42,9 @@ public class JobPost
     @Column(columnDefinition = "TEXT")
     private String description;
 
+    @Column(columnDefinition = "TEXT")
+    private String jobdetails;
+
     @Column(length = 20)
     private List<String> skills;
 
