@@ -1,0 +1,21 @@
+#jobdetails:focus
+{
+    outline: none;
+}
+
+#jobdetails
+{
+    font-size: 1vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+#description:focus
+{
+    outline: none;
+}
+
+#description
+{
+    font-size: 1vw;
+    font-family: 'Roboto', sans-serif;
+}

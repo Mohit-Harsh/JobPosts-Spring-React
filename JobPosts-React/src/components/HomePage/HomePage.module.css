@@ -1,0 +1,144 @@
+#h1
+{
+    font-size: 1.8vw;
+    font-weight: 700;
+    color: rgb(0,0,0,0.85);
+    font-family: 'Roboto', sans-serif;
+}
+
+#h3
+{
+    font-size: 2vw;
+    font-weight: 700;
+    color: rgb(0,0,0,0.85);
+    font-family: 'Roboto', sans-serif;
+}
+
+.searchdiv
+{
+    width: 25vw;
+    height: fit-content;
+    display:flex;
+    position:relative;
+    justify-content:left;
+    align-items:center;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid rgb(0,0,0,0.6);
+    transition-duration: 0.3s;
+    margin: 0 30px;
+    padding: 0 20px;
+}
+
+#search
+{
+    color: rgb(0,0,0,0.75);
+    padding: 0.8vw 1vw;
+    width: 100%;
+    font-size: 0.8vw;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+#search:focus
+{
+    outline: none;
+}
+#submit
+{
+    position: relative;
+    height: fit-content;
+    padding: 0.5vw;
+    border: transparent;
+    background-color: transparent;
+    height: 0.8vw;
+    width: auto;
+    right: 3.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dropbtn
+{
+    height: 3vw;
+    width: fit-content;
+    margin: 0 1vw;
+    padding: 0.5vw;
+    background-color: transparent;
+    border: none;
+    color: rgb(0,0,0,0.8);
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: 'Roboto' sans-serif;
+    transition-duration: 0.3s;
+
+}
+
+#vertical
+{
+    width: 2px;
+    background-color: rgb(85,85,85);
+    height: 1.5vw;
+    margin: 0;
+    padding: 0;
+}
+
+#dropdown
+{
+    transition-duration: 0.3s;
+}
+
+#dropdown:hover
+{
+    transform: translateY(-5px);
+    transition-duration: 0.3s;
+}
+
+#dropdown:focus
+{
+    transform: translateY(-5px);
+    transition-duration: 0.3s;
+}
+
+#create
+{
+    height: 3vw;
+    width: fit-content;
+    margin: 0 1vw;
+    padding: 0.5vw;
+    background-color: transparent;
+    border: none;
+    color: rgb(0,0,0,0.8);
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: 'Roboto' sans-serif;
+    transition-duration: 0.3s;
+}
+
+#create:hover
+{
+    transform: translateY(-5px);
+    transition-duration: 0.3s;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.jobdiv
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+}
